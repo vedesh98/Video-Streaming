@@ -8,6 +8,7 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
+
 app.get("/video", async (req, res) => {
     const range = req.headers.range;
     if (!range) {
